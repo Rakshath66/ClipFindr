@@ -23,7 +23,7 @@ st.markdown(
         text-align: center;
         padding: 1rem 0;
     ">
-         🖼️ Find Similar Image From Gallery
+        🌬️ Find Similar Image From Gallery
     </h1>
     """,
     unsafe_allow_html=True
@@ -33,11 +33,11 @@ model, processor = load_clip_model()
 
 
 # Dummy Gallery Images (upload some manually or simulate here)
-st.markdown("### Upload some Gallery Images:")
+st.markdown("### 🏹 Upload some Gallery Images:")
 gallery_images = st.file_uploader("", type=["jpg", "png"], accept_multiple_files=True)
 
 # --- Upload and Compare ---
-st.markdown("### <br>Query:")
+st.markdown("### 🏹 Query:")
 uploaded_image = st.file_uploader("", type=["jpg", "png", "jpeg"])
 
 with st.expander("⚠️ &nbsp;  Technology Used &nbsp;  ⚠️ ", expanded=False):
