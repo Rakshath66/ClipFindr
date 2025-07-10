@@ -37,7 +37,7 @@ st.markdown("### Upload some Gallery Images:")
 gallery_images = st.file_uploader("", type=["jpg", "png"], accept_multiple_files=True)
 
 # --- Upload and Compare ---
-st.markdown("### Query:")
+st.markdown("### <br>Query:")
 uploaded_image = st.file_uploader("", type=["jpg", "png", "jpeg"])
 
 with st.expander("⚠️ &nbsp;  Technology Used &nbsp;  ⚠️ ", expanded=False):
