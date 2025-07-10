@@ -98,4 +98,4 @@ if uploaded_image and gallery_images:
 
     for filename, score in top_matches:
         img = Image.open(os.path.join(gallery_dir, filename)).convert("RGB")
-        st.image(img, caption=f"{filename} (Score: {score:.2f})", use_column_width=True)
+        st.image(img, caption=f"{filename} (Score: {score:.2f})", use_container_width=True)
