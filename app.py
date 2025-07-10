@@ -16,7 +16,7 @@ def load_clip_model():
 st.markdown(
     """
     <h1 style="
-        background: linear-gradient(to right, #00FF00, #c2f0ff, #00FF00);
+        background: linear-gradient(to right, red, orange, red);
         -webkit-background-clip: text;
         color: transparent;
         font-size: 3rem;
