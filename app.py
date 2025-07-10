@@ -34,11 +34,11 @@ model, processor = load_clip_model()
 
 # Dummy Gallery Images (upload some manually or simulate here)
 st.markdown("### Upload some Gallery Images:")
-gallery_images = st.file_uploader("Upload gallery images", type=["jpg", "png"], accept_multiple_files=True)
+gallery_images = st.file_uploader(type=["jpg", "png"], accept_multiple_files=True)
 
 # --- Upload and Compare ---
 st.markdown("### Query:")
-uploaded_image = st.file_uploader("Upload a image to find similar images from gallery", type=["jpg", "png", "jpeg"])
+uploaded_image = st.file_uploader(type=["jpg", "png", "jpeg"])
 
 with st.expander("⚠️ &nbsp;  Technology Used &nbsp;  ⚠️ ", expanded=False):
     st.markdown("""
@@ -93,7 +93,7 @@ if uploaded_image and gallery_images:
     similarities.sort(key=lambda x: x[1], reverse=True)
     top_matches = similarities[:3]
 
-    st.image(query_img, caption="Query Image", use_column_width=True)
+    st.image(query_img, caption="Query Image", use_container_width=True)
     st.markdown("### 🔍 Top 3 Matches (with scores):")
 
     for filename, score in top_matches:
