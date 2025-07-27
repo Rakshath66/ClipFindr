@@ -132,7 +132,3 @@ MIT License © [Rakshath U Shetty](https://github.com/rakshath66)
 ---
 
 ### 🧑‍💻 Built by [Rakshath U Shetty](https://www.linkedin.com/in/rakshathushetty/)
-
----
-
-Let me know if you'd like to add a demo GIF or badge section for Streamlit Cloud/Hugging Face Spaces too!
